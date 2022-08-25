@@ -1,0 +1,25 @@
+#cont{
+
+    border: 1px solid red;
+}
+#box{
+    display: flex;
+    height: fit-content;
+    border: 1px solid black;
+    width: 70%;
+    margin: auto;
+}
+#box1{
+    width: 60%;
+    /* border: 1px solid green; */
+}
+#box2{
+    width: 30%;
+    /* border: 1px solid blue; */
+}
+.child_box{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+}
+#child_box2{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}

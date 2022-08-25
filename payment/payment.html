@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div id="cont">
+        <div id="nav">
+
+        </div>
+     
+        <div id="box">
+            <div id="box1">
+                <div id="child_box1" class="child_box">
+                    <select name="" id="">
+                        <option value="in">India</option>
+                        <option value="ch">China</option>
+                        <option value="usa">USA</option>
+                        <option value="np">Nepal</option>
+                        <option value="bh">Bhutan</option>
+                        <option value="fin">Finlad</option>
+                        <option value="grm">Germany</option>
+                        <option value="cn">Canada</option>
+                        <option value="br">Brazil</option>
+                        <option value="rus">Russia</option>
+                        <option value="sl">Sri Lanka</option>
+                        <option value="vt">Vieatnam</option>
+                    </select>
+                   
+                </div>
+                <div id="child_box2" class="child_box">
+                    <h3>Add a voucher</h3>
+                    <input id="input" type="text" placeholder="Enter your voucher code">
+                    <button id="btn2">Add VOUCHER</button>
+                </div>
+                <div id="child_box3" class="child_box">
+                  <h3>EMAIL ADDRESS</h3>
+                  <h4 id="h4"></h4>
+                </div>
+                <div id="child_box4" class="child_box">
+                   
+                    <h3>DELIVERY ADDRESS</h3>
+                    <h4>ADD ADDRESS</h4>
+
+                    <h4>FIRST NAME</h4>
+                    <input type="text" >
+                    <h4>LAST NAME</h4>
+                    <input type="text" >
+                    <h4>MOBILE</h4>
+                    <input type="text" >
+                    <h4>ADDRESS</h4>
+                    <input type="text" >
+                     <input type="text">
+                    <h4>CITY</h4>
+                    <input type="text" >
+                    <h4>COUNTRY NAME</h4>
+                    <input type="text" >
+                    <h4>POST CODE</h4>
+                    <input type="text" >
+                  
+                   
+                </div>
+            </div>
+            <div id="box2">
+                <h4>TOTAL</h4>
+                <div id="num">
+                    <div id="num3">
+                        <h4>Sub-Total</h4>
+                        <h4 id="total"></h4>
+                      
+                    </div>
+                    <div id="num4">
+                        <h4>Delivery</h4>
+                    </div>
+                </div>
+              
+                <Button id="btn">Checkout</Button>
+                <h4>WE ACCEPT</h4>
+                <div id="img">
+                    <img src="https://assets.asosservices.com/asos-finance/images/marketing/single.png">
+               
+                </div>
+                <p>Got a discount code ? Add it in the next step</p>
+            </div>
+        </div>
+        <!-- <div id="box3">
+            <h3>WONDERING WHERE YOUR ITEMS HAVE GONE</h3>
+            <P>No worries- you'll find them in your Saved Items</P>
+            <div id="view">VIEW ALL SAVED ITEMS</div>
+        </div> -->
+     
+    </div>
+    <!-- <div id="cont2">
+        <div id="img1">
+           <a href="https://www.facebook.com/ASOS/"><img id="img1" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7kEMcBn4u84Of1MXpGEgWd2CM5vBkjnei2Q&usqp=CAU" alt=""></a> 
+          <a href="https://www.instagram.com/asos/"><img id="img2" src="data:image/jpeg;base64,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" alt=""></a>
+        
+            <a href="https://www.snapchat.com/add/asosfashion"><img id="img3" src="https://www.nicepng.com/png/full/2-20606_download-snapchat-logo-icon-clipart-logo-snapchat.png" alt=""></a>
+        </div>
+      <div id="img2">
+        <img src="https://images.asos-media.com/navigation/visa-png" alt="">
+        <img src="https://images.asos-media.com/navigation/mastercard-png" alt="">
+        <img src="https://images.asos-media.com/navigation/pay-pal-png" alt="">
+       <img src="https://images.asos-media.com/navigation/american-express-png" alt="">
+       <img src="https://images.asos-media.com/navigation/visa-electron-png" alt="">
+      </div>
+    </div> -->
+    <!-- <div id="footer">
+        <div id="foot1">
+            <h4>HELP & INFORMATION</h4>
+            <a href="https://www.asos.com/customer-care/"><p>Help</p></a>
+            <a href="https://my.asos.com/my-account/orders?country=IN&keyStoreDataversion=dup0qtf-35&lang=en-GB&store=ROW&_gl=1*1x9t8ik*_ga*MTY5ODgxOTk3Ni4xNjYxMjMyMTgx*_ga_1JR0QCFRSY*MTY2MTMzNjIyOS42LjEuMTY2MTMzNjMwNy40Ni4wLjA.*_fplc*TXJxbWRYNmExRTlkQXNDQk5hUU5DTFFWbWxpQ0E0aGJ6bkxNaW5RTXY0bTJoc1FnZ0NuVk1EMldES0ZZUzg5MFdOeE9taEdVN2llTFo3R3dJbUklMkYzdlNoSUpmR2hZVWVmVyUyQlk3bWxlUk9zNGVodnE2THFkc0V1blduODM0USUzRCUzRA..&_ga=2.238605056.1433834598.1661232181-1698819976.1661232181"><p>Track order</p></a>
+            <a href="https://www.asos.com/payments-and-deliveries/delivery/"><p>Delivery & returns</p></a>
+        </div>
+        <div id="foot2">
+          <h4>ABOUT ASOS</h4>
+          <a href="https://www.asos.com/about/"><p>About us</p></a>
+          <a href="https://asoscareers.asos.com/"><p>Careers at Asos</p></a>
+          <a href="https://www.asosplc.com/fashion-with-integrity/"><p>Corparate Responsibilty</p></a>
+          <a href="https://www.asosplc.com/"><p>Investor's site</p></a>
+        </div>
+        <div id="foot3">
+            <h4>MORE FROM ASOS
+            </h4>
+            <a href="https://www.asos.com/discover/our-apps/"><p>Mobile and Asos apps</p></a>
+            <a href="https://marketplace.asos.com/?ctaref=Global+footer"><p>ASOS Marketplace</p></a>
+            <a href="https://www.asos.com/gift-vouchers/?ctaref=global%20footer|gift%20vouchers"><p>Gift vouchers</p></a>
+            <a href="https://www.asos.com/discover/black-friday-cyber-monday-deals/"><p>Black Friday</p></a>
+            <a href="https://thrift.plus/pages/get-started-asos"><p>ASOS x Thrift+</p></a>
+        </div>
+        <div id="foot4">
+            <h4>SHOPPING FROM</h4>
+            <a href=""><p>You're in</p></a>
+        </div>
+    </div> -->
+</body>
+</html>
+<script src="index.js"></script>
