@@ -1,11 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
 
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: jost;
+}
 body{
   font-family: jost;
 }
 
 #container{
-    border: 1px solid red;
+    /* border: 1px solid red; */
     width: 100%;
     height: 55rem;
 }
@@ -13,7 +19,7 @@ body{
 .nav1{
     font-size: 15px;
     line-height: 50px;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     display: flex;
     gap: 20px;
     padding-top: 1px;
@@ -28,8 +34,11 @@ a:link{
 }
 
 .text{
-  border: 1px solid blue;
+  border: 2px solid #dddddd;
   text-align: center;
+  background-color: #f8f8f8; 
+  
+  
 }
 .head{
   color: black;
@@ -41,13 +50,303 @@ a:link{
   letter-spacing: 2.9px;
 }
 .promo{
-  padding:0px 255px 25px 255px ;
-  font-size: 16px;
+  padding:0px 200px 0px 200px ;
+  font-size: 18px;
   line-height: 22.08px;
   letter-spacing: 0.4px;
   font-weight: 400;
   color: #2D2D2D;
+  text-align: center;
+  
 }
 .more-text{
   display: none;
 }
+.promo.show-more .more-text{
+  display: inline;
+  
+}
+.read-more-btn{
+  border: none;
+  font-size: 20px;
+  letter-spacing: 0.6px;
+  font-weight: 600;
+  text-align: center;
+  color: #2D2D2D;
+  background-color: transparent;
+  margin-bottom: 10px;
+  outline: none;
+}
+
+.fliter{
+  display: grid;
+  grid-template-columns: repeat(6, 0fr);
+  grid-template-rows: auto;
+  gap:15px;
+  justify-content: space-between;
+  padding-left: 55px;
+  padding-right: 40px;
+  height: 10rem;
+  /* border: 1px solid black; */
+  background-color: #eeeeee;
+}
+
+.dropdown{
+  margin-top: 10px;
+}
+#dropdownMenuButton1{
+  background-color:  #eeeeee;
+  width: 12rem;
+  height: 55px;
+  color: #2D2D2D;
+  text-align: justify;
+  border-radius: 0px;
+  outline: none;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 1px solid #dddddd;
+  border-top: 1px solid #dddddd;
+  padding-right: 15px;
+
+  
+}
+#dropdownMenuButton1:hover{
+  color: #0770cf;
+}
+.items{
+  background-color: white;
+  margin: 0 -5px;
+
+}
+
+.products{
+  /* border: 1px solid rgb(1, 58, 68); */
+  padding: 15px 45px 25px 45px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
+  gap: 10px;
+  margin-top: 35px;
+}
+.name-product{
+  
+
+}
+.img-product{
+  border-image: none;
+  padding: 10px 10px 10px 10px;
+  max-width: 100%;
+  
+}
+#card{
+  /* border: 1px solid black; */
+  background-color: white;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: normal;
+  padding: 0 10px;
+  float: left;
+  width: 100%;
+  
+}
+.items::after{
+  content: "";
+  display: table;
+  clear: both;
+}
+#price-div{
+  display: flex;
+  gap: 15px;
+}
+.div2{
+ position: relative;
+}
+.div3{
+  position: absolute;
+  top: 25px;
+  left: 10px;
+  width: 40px;
+  height: 25px;
+  
+  background-color: white;
+  color:#d01345;
+  
+  text-align: center;
+  
+}
+.add{
+  position: relative;
+  /* height: 100px;
+  margin: 0 auto; */
+  
+}
+.list{
+  position: absolute;
+  bottom: 48px;
+  right: 30px;
+  cursor: pointer;
+  padding: 10px 12px 8px;
+  background: #ffffff;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0 0 15px;
+  color: #aaa;
+  transition: .2s;
+  
+  
+}
+.list:hover{
+  color: #666666;
+
+}
+.list:before{
+  font-family: fontawesome;
+  content: '\f004';
+  font-style: normal;
+}
+.span-list{
+  position: absolute;
+  bottom: 70px;
+  left: 0;
+  right: 0;
+  visibility: .6s;
+  z-index: -2;
+  font-size: 2px;
+  color: transparent;
+  font-weight: 400;
+}
+
+list.press{
+  animation: size .4s;
+  color: black;
+}
+span.press{
+  bottom: 120px;
+  font-size: 14px;
+  visibility: visible;
+  animation: fade 1s;
+}
+
+@keyframes fade{
+  0%
+  {
+    color: transparent;
+  }
+  50%{
+    color: black;
+  }
+  100%{
+    color: transparent;
+  }
+}
+
+@keyframes size{
+  0%{
+    padding: 10px 12px 8px;
+  }
+  50%{
+    padding: 14px 16px 12px;
+    margin-top: -4px;
+  }
+  100%{
+    padding: 10px 12px 8 px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 600px) {
+  .products{
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+  #cards{
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; 
+    padding: 16px;
+    text-align: center;
+    background-color: #f1f1f1;
+  }
+}
+

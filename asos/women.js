@@ -655,6 +655,199 @@ let data = [
   ]
 
 
+  const appendData = (data) => {
+     
+    data.map(({image, name, strikethrough, price, discount}) =>{
+       //console.log(image, name, strikethrough, price, discount);
+
+       let div = document.createElement("div");
+       div.setAttribute("id", "card");
+
+       let img = document.createElement("img");
+       img.setAttribute("class", "img-product");
+       img.src = image;
+
+       let dis = document.createElement("p");
+       dis.setAttribute("class", "less");
+       dis.innerText = discount;
+
+       let title = document.createElement("p");
+       title.setAttribute("class", "name-product");
+       title.innerText= name;
+
+       let strike = document.createElement("p");
+       strike.setAttribute("class", "strike");
+       strike.innerText = strikethrough;
+       strike.style.textDecoration = "line-through";
+
+       let cost = document.createElement("p");
+       cost.setAttribute("class", "cost");
+       cost.innerText= price;
+       cost.style.color = "#d01345"
+        
+       let div2 = document.createElement("div");
+       div2.setAttribute("class", "div2");
+
+       let div1 = document.createElement("div");
+       div1.setAttribute("id","price-div");
+
+       let div3 = document.createElement("div")
+       div3.setAttribute("class", "div3");
+
+       let div4 = document.createElement("div");
+       div4.setAttribute("class", "add");
+
+       let list = document.createElement("i");
+       list.setAttribute("class", "list")
+
+      let span = document.createElement("span");
+      span.innerText = "Added to WishList";
+      span.setAttribute("class","span-list")
+       
+       div4.append(list, span)
+       div3.append(dis)
+       div2.append(img, div4, div3)
+       div1.append(strike, cost)
+       div.append(div2, title, div1);
+       document.querySelector(".products").append(div);
+
+
+    })
+
+  }
+  appendData(data);
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   //read_more_button
 
-   const readMoreBtn = document.querySelector()
+   const readMoreBtn = document.querySelector(".read-more-btn");
+
+   const text = document.querySelector(".promo");
+
+   readMoreBtn.addEventListener("click", (e)=> {
+    text.classList.toggle("show-more");
+    if(readMoreBtn.innerText === "View Less")
+    {
+      readMoreBtn.innerText = "View More";
+    }
+    else 
+    {
+      readMoreBtn.innerText = "View Less";
+    }
+   });
