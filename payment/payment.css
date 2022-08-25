@@ -1,25 +1,115 @@
-#cont{
+#cont {
 
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
-#box{
+
+#box {
     display: flex;
     height: fit-content;
-    border: 1px solid black;
-    width: 70%;
+    /* border: 1px solid black; */
+    width: 60%;
     margin: auto;
 }
-#box1{
+
+#box1 {
     width: 60%;
     /* border: 1px solid green; */
 }
-#box2{
-    width: 30%;
+
+#box2 {
+    width: 35%;
+
     /* border: 1px solid blue; */
 }
-.child_box{
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+
+.child_box {
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    color: gray;
 }
-#child_box2{
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+#child_box1 {
+    width: 50%;
+    height: 40px;
+
+}
+
+#child_box1>select {
+    width: 100%;
+    height: 100%;
+}
+
+#child_box2 {
+    
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    height: 8%;
+}
+
+#child_box_2>input {
+    width: 80%;
+    height: 30px;
+}
+#child_box3{
+    display: flex;
+    align-items:center ;
+    justify-content: space-between;
+}
+#submit {
+    width: 100px;
+    margin-top: 3%;
+    height: 30px;
+}
+
+#data {
+    display: none;
+
+}
+
+#data>div {
+    width: 250px;
+    height: fit-content;
+
+    display: block;
+}
+
+#data>div>h6 {
+    margin-left: 2%;
+}
+
+#box2 {
+    margin-left: 5%;
+    position: sticky;
+    /* border: 1px solid red; */
+}
+
+#box2>#box2_child>div {
+    margin-top: 1%;
+    display: flex;
+    text-align: center;
+    /* border: 1px solid red; */
+    width: 100%;
+    height: 100px;
+
+}
+
+#box2>div:nth-child(1) {
+    margin-top: 10%;
+}
+
+#box>div>img {
+    width: 30%;
+    height: 90%;
+}
+
+#count {
+
+    width: 95%;
+    height: 30px;
+    margin-left: 3%;
+}
+
+.free {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
