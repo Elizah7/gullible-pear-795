@@ -121,16 +121,16 @@ a:link{
 
 .products{
   /* border: 1px solid rgb(1, 58, 68); */
-  padding: 15px 45px 25px 45px;
+  padding: 15px 25px 25px 25px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: auto;
-  gap: 10px;
+  gap: 0px;
   margin-top: 35px;
 }
 .name-product{
   
-
+padding: 0px 25px 10px 10px;
 }
 .img-product{
   border-image: none;
@@ -148,6 +148,7 @@ a:link{
   float: left;
   width: 100%;
   
+  
 }
 .items::after{
   content: "";
@@ -157,6 +158,8 @@ a:link{
 #price-div{
   display: flex;
   gap: 15px;
+  text-align: center;
+  margin-left: 19px;
 }
 .div2{
  position: relative;
@@ -216,16 +219,16 @@ a:link{
   font-weight: 400;
 }
 
-list.press{
+/* list.click{
   animation: size .4s;
   color: black;
 }
-span.press{
+span.click{
   bottom: 120px;
   font-size: 14px;
   visibility: visible;
   animation: fade 1s;
-}
+} */
 
 @keyframes fade{
   0%
