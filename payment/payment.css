@@ -1,36 +1,54 @@
-#cont {
 
-    /* border: 1px solid red; */
+body{
+    background-color: rgb(227, 223, 223);
 }
 
 #box {
     display: flex;
     height: fit-content;
     /* border: 1px solid black; */
-    width: 60%;
+    width: 70%;
     margin: auto;
 }
 
 #box1 {
     width: 60%;
     /* border: 1px solid green; */
+    /* background-color: white; */
 }
 
 #box2 {
     width: 35%;
-
+    height: fit-content;
+   background-color: white;
     /* border: 1px solid blue; */
 }
 
 .child_box {
+    background-color: white;
     box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
     color: gray;
 }
+.child_box>div{
+    margin-left: 2%;
+}
+.child_box>h4{
+    margin-left: 2%;
+}
+.child_box>h3{
+    margin-left: 2%;
+}
+.child_box>input{
+    margin-left: 2%;
+}
 
 #child_box1 {
-    width: 50%;
+    width: 100%;
     height: 40px;
 
+}
+#child_box1>select{
+    width: 50%;
 }
 
 #child_box1>select {
@@ -50,9 +68,8 @@
     height: 30px;
 }
 #child_box3{
-    display: flex;
-    align-items:center ;
-    justify-content: space-between;
+margin-top: 2%;
+height: 7%;
 }
 #submit {
     width: 100px;
@@ -82,14 +99,26 @@
     /* border: 1px solid red; */
 }
 
-#box2>#box2_child>div {
-    margin-top: 1%;
-    display: flex;
-    text-align: center;
+#box2>#box2_child>div:nth-child(1) {
+   
+    /* display: flex; */
+    /* text-align: center; */
     /* border: 1px solid red; */
-    width: 100%;
-    height: 100px;
+    width: 30%;
+    /* border: 1px solid red; */
+    height: 100%;
 
+}
+#box2>#box2_child>div:nth-child(2){
+    /* border: 1px solid red; */
+    width: 68%;
+    height: 100%;
+    margin-left: 1%;
+}
+
+#box2>#box2_child>div>img{
+ width: 100%;
+ height: 100%;
 }
 
 #box2>div:nth-child(1) {
@@ -112,4 +141,76 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+#creditcard{
+    margin-top: 2%;
+    text-align: center;
+width: 60%;
+height: 7%;
+border: 1px solid gray;
+}
+#paypal{
+    margin-top: 2%;
+    text-align: center;
+    width: 60%;
+    height: 4%;
+    border: 1px solid gray;
+
+}
+#carddetail{
+    display: none;
+}
+#addcredit{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#cancel{
+    width: 30%;
+     height: 5%;
+}
+#cardnumber{
+    width: 60%;
+    height: 40px;
+}
+label{
+    display: block;
+    margin-top: 1%;
+}
+select{
+    width: 25%;
+    height: 30px;
+}
+#name{
+    width: 60%;
+    height: 40px;
+}
+#entercvv{
+    width: 25%;
+    height: 30px;
+}
+.input{
+    margin-top: 2%;
+}
+#Payment{
+    margin-top: 2%;
+    width: 100%;
+    height: 40px;
+}
+#box2_child{
+    display: flex;
+    /* border: 1px solid black; */
+    align-items: center;
+}
+#footer{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(233, 230, 230);
+    text-decoration: none;
+}
+#footer>div>a{
+    text-decoration: none;
+    color: gray;
 }
