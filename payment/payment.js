@@ -1,10 +1,10 @@
 let vdata = [
     { price: 7, name: "parker", type: "super", image: "https://images.asos-media.com/products/hollister-hoodie-in-black-with-chest-logo/201602216-1-black" },
-    { price: 6, name: "peter", type: "human", image: "https://images.asos-media.com/products/hollister-hoodie-in-black-with-chest-logo/201602216-1-black" },
-    { price: 3, name: "antman", type: "super", image: "https://images.asos-media.com/products/hollister-hoodie-in-black-with-chest-logo/201602216-1-black" },
-    { price: 10, name: "ironman", type: "super", image: "https://images.asos-media.com/products/hollister-hoodie-in-black-with-chest-logo/201602216-1-black" },
-    { price: 100, name: "elizah", type: "originalvampire", image: "https://images.asos-media.com/products/hollister-hoodie-in-black-with-chest-logo/201602216-1-black" },
-    { price: 10, name: "marcel", type: "vampire", image: "https://images.asos-media.com/products/hollister-hoodie-in-black-with-chest-logo/201602216-1-black" }
+    // { price: 6, name: "peter", type: "human", image: "https://images.asos-media.com/products/hollister-hoodie-in-black-with-chest-logo/201602216-1-black" },
+    // { price: 3, name: "antman", type: "super", image: "https://images.asos-media.com/products/hollister-hoodie-in-black-with-chest-logo/201602216-1-black" },
+    // { price: 10, name: "ironman", type: "super", image: "https://images.asos-media.com/products/hollister-hoodie-in-black-with-chest-logo/201602216-1-black" },
+    // { price: 100, name: "elizah", type: "originalvampire", image: "https://images.asos-media.com/products/hollister-hoodie-in-black-with-chest-logo/201602216-1-black" },
+    // { price: 10, name: "marcel", type: "vampire", image: "https://images.asos-media.com/products/hollister-hoodie-in-black-with-chest-logo/201602216-1-black" }
 ]
 
 
@@ -30,6 +30,7 @@ let display = (data) => {
         let subtotal2 = document.getElementById("subtotal2")
         subtotal2.innerHTML = +subtotal2.innerHTML + (+ele.price)
         let div = document.createElement("div")
+        let div2 = document.createElement("div")
         let img = document.createElement("img")
         img.src = ele.image;
         let h4 = document.createElement("h4")
@@ -39,8 +40,9 @@ let display = (data) => {
         let p2 = document.createElement("p")
         p2.innerText = ele.type
 
-        div.append(img, h4, p, p2)
-        child_box2.append(div);
+        div.append(img)
+        div2.append(h4,p,p2)
+        child_box2.append(div,div2);
     })
 
 
@@ -148,4 +150,68 @@ let myFunction2 = () => {
 let btn2 = document.getElementById("btn2")
 btn2.addEventListener("click", () => {
     myFunction2()
+})
+
+let myfuntion3 = ()=>{
+    let card = document.getElementById("card").style.display = "none";
+ let carddetail = document.getElementById("carddetail").style.display = "inline";
+}
+
+let creditcard = document.getElementById("creditcard")
+creditcard.addEventListener("click", ()=>{
+    myfuntion3()
+})
+
+let takinginput = ()=>{
+    let cardnumber = document.getElementById("cardnumber").value 
+    if(cardnumber.length == 4 || cardnumber.length == 9 || cardnumber.length == 14){
+        document.getElementById("cardnumber").value = cardnumber+" ";
+        document.getElementById("cardnumber").max = 1;
+    }
+}
+
+let cardnumber = document.getElementById("cardnumber")
+cardnumber.addEventListener("keypress", ()=>{
+    takinginput()
+})
+
+let cancelfunction = ()=>{
+    let card = document.getElementById("card").style.display = "inline";
+    let carddetail = document.getElementById("carddetail").style.display = "none";
+}
+
+let cancel = document.getElementById("cancel")
+cancel.addEventListener("click", ()=>{
+    cancelfunction()
+})
+
+let takepayment = ()=>{
+    let cardnumber =document.getElementById("cardnumber").value
+    let selectmon = document.getElementById("selectmon").value
+    let selectyear = document.getElementById("selectyear").value
+    let name =document.getElementById("name").value
+    let cvv = document.getElementById("entercvv").value
+   
+    if(cardnumber.length<19){
+        alert("incorrect card number")
+    }
+   else if(selectmon == "mon"){
+       alert("please select month")
+    }
+   else if(selectyear == "YEAR"){
+        alert("please select year")
+    }
+   else if(name.length < 8){
+       alert("please enter correct name")
+    }
+   else if(cvv.length<3){
+     alert("please enter correct cvv")
+    }
+  
+   
+}
+
+let Payment = document.getElementById("Payment")
+Payment.addEventListener("click", ()=>{
+    takepayment()
 })
