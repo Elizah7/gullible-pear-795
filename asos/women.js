@@ -655,9 +655,13 @@ let data = [
   ]
 
 
+
+   let product = [];
+   console.log(product);
+
   const appendData = (data) => {
      
-    data.map(({image, name, strikethrough, price, discount}) =>{
+    data.map(({image, name, price, colour}) =>{
        //console.log(image, name, strikethrough, price, discount);
 
        let div = document.createElement("div");
@@ -667,18 +671,18 @@ let data = [
        img.setAttribute("class", "img-product");
        img.src = image;
 
-       let dis = document.createElement("p");
-       dis.setAttribute("class", "less");
-       dis.innerText = discount;
+      //  let dis = document.createElement("p");
+      //  dis.setAttribute("class", "less");
+      //  dis.innerText = discount;
 
        let title = document.createElement("p");
        title.setAttribute("class", "name-product");
        title.innerText= name;
 
-       let strike = document.createElement("p");
-       strike.setAttribute("class", "strike");
-       strike.innerText = strikethrough;
-       strike.style.textDecoration = "line-through";
+      //  let strike = document.createElement("p");
+      //  strike.setAttribute("class", "strike");
+      //  strike.innerText = strikethrough;
+      //  strike.style.textDecoration = "line-through";
 
        let cost = document.createElement("p");
        cost.setAttribute("class", "cost");
@@ -691,8 +695,8 @@ let data = [
        let div1 = document.createElement("div");
        div1.setAttribute("id","price-div");
 
-       let div3 = document.createElement("div")
-       div3.setAttribute("class", "div3");
+      //  let div3 = document.createElement("div")
+      //  div3.setAttribute("class", "div3");
 
        let div4 = document.createElement("div");
        div4.setAttribute("class", "add");
@@ -703,12 +707,24 @@ let data = [
       let span = document.createElement("span");
       span.innerText = "Added to WishList";
       span.setAttribute("class","span-list")
+
+
+      let el ={
+        image: image,
+        name : name,
+        price : price,
+       color : colour,
+      }
        
        div4.append(list, span)
-       div3.append(dis)
-       div2.append(img, div4, div3)
-       div1.append(strike, cost)
+      //  div3.append(dis)
+       div2.append(img, div4)
+       div1.append(cost)
        div.append(div2, title, div1);
+
+       div.addEventListener("click", function(){
+        productDetails(el);
+       })
        document.querySelector(".products").append(div);
 
 
@@ -718,123 +734,15 @@ let data = [
   appendData(data);
 
 
-  
 
+  let productDetails = (el) =>{
 
-  
+    product.push(el);
+    console.log(product);
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    localStorage.setItem("details", JSON.stringify(product));
+    window.location.href = "proDetails.html";
+  }
 
 
   //read_more_button
