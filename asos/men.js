@@ -137,7 +137,7 @@ let product = [];
       span.setAttribute("class","span-list")
 
 
-      let el ={
+      let elm ={
         image: image,
         name : name,
         price : price,
@@ -151,7 +151,7 @@ let product = [];
        div.append(div2, title, div1);
 
        div.addEventListener("click", function(){
-        productDetails(el);
+        productDetails(elm);
        })
        document.querySelector(".products").append(div);
 
@@ -165,10 +165,10 @@ let product = [];
 
   let productDetails = (el) =>{
 
-    // product.push(el);
-    // console.log(product);
+    product.push(el);
+    console.log(product);
 
-    localStorage.setItem("details", JSON.stringify(el));
+    localStorage.setItem("details", JSON.stringify(product));
     window.location.href = "proDetails.html";
   }
 

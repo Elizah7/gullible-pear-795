@@ -1,6 +1,6 @@
 
 let buy = JSON.parse(localStorage.getItem("details"))
-//console.log(buy);
+console.log(buy);
 
 let bag = JSON.parse(localStorage.getItem("data")) || [];
 
@@ -68,7 +68,7 @@ buy.map(function(data){
 
 
     let button1 = document.createElement("button");
-    button1.innerText = "ADD TO BAG";
+    button1.innerText = "PROCESS TO CHECKOUT";
     button1.setAttribute("class", "btn1");
     button1.style.backgroundColor = "#018849"
     
@@ -84,8 +84,9 @@ buy.map(function(data){
 
 function addToBag(data){
     bag.push(data);
-    console.log(bag);
-
+    //console.log(bag);
+     
     localStorage.setItem("data", JSON.stringify(bag));
+    window.location.href = "../payment/payment.html";
 
 }
