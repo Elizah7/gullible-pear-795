@@ -36,7 +36,7 @@ let display = (data) => {
         let p = document.createElement("p")
         p.innerText = ele.price;
         let p2 = document.createElement("p")
-        p2.innerText = ele.type
+        p2.innerText = ele.color
 
         div.append(img)
         div2.append(h4,p,p2)
