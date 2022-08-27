@@ -656,14 +656,24 @@ let data = [
 
 
 
+    // import navbar from "./components/navbar.js";
+    // document.getElementById("navbar"). innerHTML = navbar();
+
+    // import footer from "./components/footer.js";
+    // document.getElementById("footer"). innerHTML = footer();
+
+
    let product = [];
    console.log(product);
+    
+   document.querySelector(".products").innerHTML = null;
 
   const appendData = (data) => {
-     
+      
     data.map(({image, name, price, colour}) =>{
        //console.log(image, name, strikethrough, price, discount);
-
+       
+      
        let div = document.createElement("div");
        div.setAttribute("id", "card");
 
@@ -686,7 +696,7 @@ let data = [
 
        let cost = document.createElement("p");
        cost.setAttribute("class", "cost");
-       cost.innerText= price;
+       cost.innerText= `£ ${price}`;
        cost.style.color = "#d01345"
         
        let div2 = document.createElement("div");
@@ -722,7 +732,7 @@ let data = [
        div1.append(cost)
        div.append(div2, title, div1);
 
-       div.addEventListener("click", function(){
+       img.addEventListener("click", function(){
         productDetails(el);
        })
        document.querySelector(".products").append(div);
@@ -762,3 +772,45 @@ let data = [
       readMoreBtn.innerText = "View Less";
     }
    });
+
+ 
+  const mySort = (data, sort)=>{
+    console.log(data, sort)
+    if(sort === "sortLH"){
+      data.sort((a, b) =>{
+        return (Number(a.price) - Number(b.price));
+      });
+    }
+    else if (sort == "sortHL"){
+      data.sort((a, b) =>{
+        return (Number(b.price) - Number(a.price));
+      });
+    }
+    appendData(data);
+  }
+
+  // const sortLH = (data) =>{
+    
+  //   data.sort((a,b)=>{
+  //     return (Number(a.price) - Number(b.price));
+  //   });
+  //   appendData(data);
+  //   //console.log(sortLH)
+  // }
+
+  // const sortHL = (data) =>{
+    
+  //   data.sort((a, b)=>{
+  //     return (Number(b.price) - Number(a.price));
+  //   });
+  //   appendData(data);
+  //   //console.log(sortHL)
+  // }
+
+  document.querySelector("#low").addEventListener("click", ()=>{
+    mySort(data);
+  })
+
+  document.querySelector("#high").addEventListener("click", ()=>{
+    mySort(data);
+  })
