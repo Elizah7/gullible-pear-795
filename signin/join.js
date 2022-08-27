@@ -34,7 +34,8 @@ function datachek(){
 
     alert("walcoome to asos")
    
-    window.location.href="gullible-pear-795/signin/signin.html"
+    window.location.href="signin.html"
+
 }
 datachek()
 
