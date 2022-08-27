@@ -1,0 +1,580 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
+
+body{
+  font-family: jost;
+}
+
+*{
+    padding:0px;
+    margin:0px;
+ }
+ #navbar1{
+  height: 30px;
+  width:auto;
+  border:1px solid rgb(215, 215, 215);
+  background-color:white;
+  display:flex;
+  display:flex;
+  justify-content: end;
+  
+}
+#marketplace{
+    height:30px;
+    width:100px;
+    border:1px solid rgb(215, 215, 215);
+    color:grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+}
+#help{
+    height:30px;
+    width:120px;
+    border:1px solid rgb(215, 215, 215);
+    color:grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+}
+#im{ 
+    height:70%; 
+    margin-left:13px;
+    margin-top: 4px;
+}
+#imga{
+    height:30px;
+    width:50px;
+    border:1px solid rgb(215, 215, 215);
+    
+    margin-right: 100px;
+}
+#navbar2{
+    height:65px;
+    width:auto;
+    display: flex;
+
+}
+#navbar21{
+    height:65px;
+    width:400px;
+    background-color: black;
+    display: flex;
+}
+#navbar22{
+height: 65px;
+width:73.7%;
+background-color:black;
+margin-left: 1px;
+display: flex;
+}
+#aso{
+   height:65px;
+   width:100px;
+   margin-left: 80px;
+}
+#logoim{
+    width:100%;
+    height:65px;
+}
+#women{
+    height: 65px;
+    width:110px;
+    cursor: pointer;
+    background-color:black;   
+}
+a{
+    text-decoration: none;
+}
+#men{
+    height: 65px;
+    width:110px;
+   cursor: pointer;
+   background-color: #525050;
+}
+#men:hover{
+    background-color: #525050;
+}
+#colorw{
+    color:white;
+    padding-top: 3px;
+    display: flex;
+    justify-content: center;
+    padding-top: 25px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 16px;
+
+}
+#colorm{
+    color:white;
+    padding-top: 3px;
+    display: flex;
+    justify-content: center;
+    padding-top: 25px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 16px;
+}
+#search{
+    width:73%;
+    height:40px;
+    background-color: white;
+    border-radius: 50px;
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    margin-top:13px;
+    margin-left: 20px;
+}
+#searchbar{
+padding-left: 15px;
+font-stretch: expanded;
+font-size: 16px;
+}
+#searchlogo{
+    padding-right: 15px;
+}
+
+#loginlogo{
+    height:65px;
+    width:50px;
+   margin-left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fa-user{
+color:white;
+
+}
+#heart{
+    height:65px;
+    width:50px;
+   margin-left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fa-heart{
+    color:white;
+}
+#bag{
+    height:65px;
+    width:50px;
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fa-bag-shopping{
+    color: white;
+    
+}
+#navbar3{
+    height:60px;
+    width:auto;
+    background-color: #525050;
+    display:grid;
+    grid-template-columns: repeat(14,1fr);
+    grid-template-rows: repeat(1,40px);
+    
+    gap:20px;
+    padding-left: 110px;
+    display:flex;
+    justify-content: left;
+    align-items: center;
+    cursor: pointer;
+    
+}
+.sale{
+    height:60px;
+    width:50px;
+    box-decoration-break: inherit;
+    background-color: red;
+
+color:white;
+font-size: 16px;
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+.des{
+    height:60px;
+    width:auto;
+    color:white;
+    font-size: 16px;
+    display: flex;
+justify-content: center;
+align-items: center;
+}
+.sale:hover{
+    background-color: white;
+    color:black;
+}
+.des:hover{
+    background-color: white;
+    color:black;
+}
+#navbar4{
+    height:60px;
+    width:100%;
+   
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(1,60px);
+    gap:1px;
+    
+}
+#biggest{
+    width:100%;
+    background-color:  #f05053;
+    font-weight: bold;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    font-size: 14px;
+    cursor: pointer;
+}
+#biggest>p{
+    width:180px;
+    
+}
+
+#free{
+    background-color: black;
+    color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+#banner{
+    height:300px;
+    width:100%;
+  
+    margin-top: 1px;
+    background: #e1eec3; 
+background: -webkit-linear-gradient(to right, #f05053, #e1eec3);  
+background: linear-gradient(to right, #f05053, #e1eec3); 
+cursor: pointer;
+}
+#salebut{
+margin-left:660px;
+padding-top:30px;
+}
+#get{
+    height:fit-content;
+    width:28%;
+    margin:auto;
+   display:flex;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   font-size: 20px;
+   font-weight: 900;
+   font-style: inherit;
+   letter-spacing: 2px;
+   margin-top:10px;
+   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   font-style:italic ;
+ 
+}
+#upto{
+    height:fit-content;
+    width:28%;
+    margin:auto;
+   display:flex;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   font-size: 20px;
+   font-weight:900;
+   font-style: inherit;
+   letter-spacing: 2px;
+   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   font-style:italic ;
+ 
+}
+#withcode{
+    text-align: center;
+    margin-top: 15px;
+    font-weight: bolder;
+    letter-spacing: 2px;
+}
+#see{
+    height:fit-content;
+    width:fit-content;
+    margin:auto;
+    font-size: 13px;
+   margin-top: 60px;
+    border-radius: 5px;
+}
+#midbanner{
+    height:600px;
+    width:100%;
+    margin:auto;
+    margin-top:50px;
+    cursor: pointer;
+    position:relative;
+max-width: 85%;
+    
+}
+#midbanner>img{
+    height:600px;
+    width:100%;
+
+}
+
+#shopasosdesign{
+    position: absolute;
+    padding: 20px 30px 20px 30px;
+right:42%;
+bottom:10%;
+     font-size: 18px;
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     font-weight: bold;
+     border:none;
+
+}
+#noty{
+    height:80px;
+    width:35%;
+    font-size: 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+    background-color: white;
+    position: absolute;
+    right:33%;
+    bottom:26%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#cards{
+    height:480px;
+    width:85%;
+    
+    margin:auto;
+    margin-top:60px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(1,480px);
+    gap:20px;
+}
+
+#cards>div>img{
+    width:100%;
+}
+.cardsh{
+    display:flex;
+    justify-content: center;
+    font-stretch: wider;
+    padding-top: 10px;
+}
+.cardsp{
+    display:flex;
+    justify-content: center;
+    font-stretch: wider;
+}
+#lowerhead{
+    height:200px;
+    width:100%;
+    margin-top:20px;
+    background: #AAFFA9;
+background: linear-gradient(to right, #11FFBD, #AAFFA9); 
+background: -webkit-linear-gradient(to right, #11FFBD, #AAFFA9);
+}
+#denim{
+    height:fit-content;
+    width:35%;
+    margin:auto;
+   display:flex;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   font-size: 20px;
+   font-weight:900;
+   font-style: inherit;
+   letter-spacing: 2px;
+   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   font-style:italic ;
+   padding-top:20px;
+
+}
+#bags{
+    text-align: center;
+    margin-top: 15px;
+    font-weight: bolder;
+    letter-spacing: 2px;
+    margin-top: 0%;
+    font-size: 20px;
+   font-weight:900;
+   font-style: inherit;
+   letter-spacing: 2px;
+   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   font-style:italic ;
+}
+#codes{
+    height:60px;
+    width:20%;
+    margin:auto;
+    text-align: center;
+    margin-top: 25px;
+}
+#seee{
+    height:fit-content;
+    width:fit-content;
+    margin:auto;
+    font-size: 13px;
+    border-radius: 5px;
+}
+#nextcards{
+    height:800px;
+    width:70%;
+    
+    margin:auto;
+    margin-top:50px;
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(1,800px);
+    gap:30px;
+    cursor: pointer;
+}
+#nextcards>div>img{
+    width:100%;
+}
+.nextcardsh{
+    display:flex;
+    justify-content: center;
+    font-stretch: wider;
+    margin-top: 5px;
+}
+.nextcardsp{
+    display:flex;
+    justify-content: center;
+    font-stretch: wider;
+    margin-top: 5px;
+}
+.butt{
+    padding:17px 30px 17px 30px;
+    border-color: black;
+    font-size:16px;
+    font-weight: bold;
+    margin-top:10px;
+margin:auto;
+display: flex;
+justify-content: center;
+}
+.butt:hover{
+    background-color: black;
+    color:white;
+}
+#trending{
+    height:fit-content;
+    width:fit-content;
+    
+    margin:auto;
+}
+#trendb{
+    height:250px;
+    width:85%;
+   
+    margin:auto;
+    margin-top: 50px;
+    display:grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: repeat(1,250px);
+    gap:20px;
+    cursor: pointer;
+    
+}
+#trendb>div>img{
+width:100%;
+
+}
+#media{
+    height:60px;
+    width:50%;
+   
+    margin:auto;
+    display:grid;
+    grid-template-columns: repeat(8,1fr);
+    grid-template-rows: repeat(1,60px);
+    gap:20px;
+    cursor: pointer;
+}
+#media>div>img{
+    width:50%;
+    margin-top:10px;
+}
+#foot{
+    height:250px;
+    width:100%;
+    margin:auto;
+    margin-top:50px;
+    background-color: rgb(236, 236, 253);
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(1,250px);
+    gap:20px;
+    cursor: pointer;
+}
+#foot>div{
+  
+    padding-left:50px;
+    padding-top: 50px;
+
+}
+#footer{
+    height:50px;
+    width:100%;
+    background-color: #C6FFDD;
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(1,50px);
+    gap:20px;
+}
+#footleft{
+    height:fit-content;
+    font-size: 12px;
+    display:flex;
+    padding-left: 100px;
+    margin-top:12px;
+    
+}
+#footright{
+    height:fit-content;
+    font-size: 12px;
+    display:flex;
+    justify-content: end;
+    padding-right:100px;
+    margin-top:12px;
+    gap:10px;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

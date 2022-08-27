@@ -1,4 +1,12 @@
 
+
+import {navbar,footer} from "../homepage/script.js"
+document.getElementById("navbar").innerHTML = navbar();
+
+document.getElementById("footer1").innerHTML = footer();
+
+
+
 let buy = JSON.parse(localStorage.getItem("details"))
 console.log(buy);
 
@@ -23,7 +31,7 @@ buy.map(function(data){
     // strike.style.color = "#666666";
 
     let price = document.createElement("p");
-    price.innerText = data.price;
+    price.innerText = `£ ${data.price}`;
     price.style.color = "#d01345"
 
     // let discount = document.createElement("p");
