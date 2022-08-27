@@ -14,7 +14,7 @@ function joinbtn(){
     
 
     let s1=new userdata(email,password,name)
-    let isvalidated=false;
+
    if(email==="")
    {
     alert("pleas enter email")
@@ -39,4 +39,8 @@ function datachek(){
 }
 datachek()
 
+}
+
+function datachek1(){
+    
 }
