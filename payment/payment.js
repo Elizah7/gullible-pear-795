@@ -1,5 +1,10 @@
 
-import {navbar} from "../homepage/"
+import {navbar} from "../homepage/script.js"
+let nav  = document.getElementById("nav")
+nav.innerHTML = navbar()
+
+// let foot = document.getElementById("footer")
+// foot.innerHTML = footer()
 
 let append2 = (data) => {
     let h4 = document.getElementById("h4")
