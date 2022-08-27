@@ -1,5 +1,13 @@
 
-import {navbar} from "../homepage/"
+import {navbar} from "../homepage/script.js"
+import {display} from "./export.js"
+let nav  = document.getElementById("nav")
+nav.innerHTML = navbar()
+
+
+
+// let foot = document.getElementById("footer")
+// foot.innerHTML = footer()
 
 let append2 = (data) => {
     let h4 = document.getElementById("h4")
@@ -14,32 +22,6 @@ let usereamil = JSON.parse(localStorage.getItem("useremail")) || []
 append2(usereamil)
 
 
-let display = (data) => {
-    let child_box2 = document.getElementById("box2_child1")
-
-    child_box2.innerHTML = " ";
-
-    data.forEach((ele) => {
-        let subtotal2 = document.getElementById("subtotal2")
-        subtotal2.innerHTML = +subtotal2.innerHTML + (+ele.price)
-        let div = document.createElement("div")
-        let div2 = document.createElement("div")
-        let img = document.createElement("img")
-        img.src = ele.image;
-        let h4 = document.createElement("h4")
-        h4.innerText = ele.name
-        let p = document.createElement("p")
-        p.innerText = ele.price;
-        let p2 = document.createElement("p")
-        p2.innerText = ele.type
-
-        div.append(img)
-        div2.append(h4,p,p2)
-        child_box2.append(div,div2);
-    })
-
-
-}
 let vdata = JSON.parse(localStorage.getItem("data"))||[]
 console.log(vdata)
 display(vdata)
@@ -132,13 +114,11 @@ let myFunction2 = () => {
     let input = document.getElementById("input").value
     if (input == "Theoriginals") {
         let subtotal2 = document.getElementById("subtotal2")
-
-        tpy.innerHTML = (+subtotal2.innerHTML * 90) / 100
+        tpy.innerHTML =`£ ${(+subtotal2.innerHTML * 90) / 100}`
     }
     else {
         alert("Wrong Voucher code")
     }
-
 }
 
 let btn2 = document.getElementById("btn2")
@@ -201,7 +181,13 @@ let takepayment = ()=>{
    else if(cvv.length<3){
      alert("please enter correct cvv")
     }
-  
+  else{
+    alert("Thank you for shopping ! Your order has been booked ")
+
+    window.location.href = "order.html"
+    
+
+  }
    
 }
 

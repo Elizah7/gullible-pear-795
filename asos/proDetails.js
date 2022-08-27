@@ -13,7 +13,7 @@ console.log(buy);
 let bag = JSON.parse(localStorage.getItem("data")) || [];
 
 buy.map(function(data){
-     
+     console.log(data)
     document.querySelector(".image").innerHTML = null;
     document.querySelector(".info").innerHTML = null;
 
