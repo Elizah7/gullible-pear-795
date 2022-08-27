@@ -673,11 +673,11 @@ let data = [
    let product = [];
    console.log(product);
     
-   document.querySelector(".products").innerHTML = null;
+   let box=document.querySelector(".products");
 
-  const appendData = (data) => {
-      
-    data.map(({image, name, price, colour}) =>{
+  let appendData = (data) => {
+    box.innerHTML = null;
+    data.forEach(({image, name, price, colour}) =>{
        //console.log(image, name, strikethrough, price, discount);
        
       
@@ -742,7 +742,7 @@ let data = [
        img.addEventListener("click", function(){
         productDetails(el);
        })
-       document.querySelector(".products").append(div);
+       box.append(div);
 
 
     })
@@ -781,43 +781,40 @@ let data = [
    });
 
  
-  // const mySort = (data, sort)=>{
-  //   console.log(data, sort)
-  //   if(sort === "sortLH"){
-  //     data.sort((a, b) =>{
-  //       return (Number(a.price) - Number(b.price));
-  //     });
-  //   }
-  //   else if (sort == "sortHL"){
-  //     data.sort((a, b) =>{
-  //       return (Number(b.price) - Number(a.price));
-  //     });
-  //   }
-  //   appendData(data);
-  // }
 
-  const sortLH = (data) =>{
-    
-    data.sort((a,b)=>{
-      return (a.price) - (b.price);
+  document.getElementById("low").onclick = ()=>{
+    sortLH();
+  }
+
+  document.getElementById("high").onclick = ()=>{
+    sortHL();
+  }
+  
+
+  let sortHL = () =>{
+    let s = data
+    console.log("hii")
+   s = s.sort((a, b)=>{
+      return b.price - a.price;
     });
-    appendData(data);
+    appendData(s);
+    //console.log(s)
+  }
+
+  let sortLH = () =>{
+    let s = data
+    console.log("hii")
+   s = s.sort((a, b)=>{
+      return a.price - b.price;
+    });
+    appendData(s);
+    console.log(s);
     
   }
 
-  const sortHL = (data) =>{
-    
-    data.sort((a, b)=>{
-      return (b.price) - (a.price);
-    });
-    appendData(data);
-    
-  }
+   
 
-  document.querySelector("#low").addEventListener("click", ()=>{
-    sortLH(data);
-  })
+  
+  
 
-  document.querySelector("#high").addEventListener("click", ()=>{
-    sortHL(data);
-  })
+ 
