@@ -90,6 +90,11 @@ let data = [
     },
 ]
 
+import {navbar,footer} from "../homepage/script.js"
+document.getElementById("navbar").innerHTML = navbar();
+
+document.getElementById("footer1").innerHTML = footer();
+
 
 let product = [];
    console.log(product);
