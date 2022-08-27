@@ -8,6 +8,10 @@
     margin-top: 64px;
     width: auto;
 }
+a{
+    background-color: transparent;
+    text-decoration: none;
+}
 #box{
     
     height: 1100px;
@@ -22,7 +26,7 @@
     background-color: white;
     display: flex;
     align-items: center;
-    /* justify-content: space-around; */
+    justify-content: space-around;
     padding-top: 10px;
 }
 p{
@@ -33,21 +37,26 @@ p{
     color: gray;
 }
 #p1{
-    margin-left:110px;
+    margin-left:150px;
     color: black;
     font-stretch: wider;
-    
+}
+#p2{
+    /* padding-right: -80px; */
+    margin-right: 100px;
+  
+
 }
 hr{
     width: 93%;
-    margin-left: 20px;
+    margin-left: 10px;
     margin-top: -11px; 
 }
 h4{
    font-size: 30px;
    color: rgb(202, 201, 201);
    background-color: transparent;
-   margin-left: 170px;
+   margin-left: 130px;
 }
 #form{
     margin-top: 30px;
@@ -92,6 +101,13 @@ h4{
 #h3{
     margin-top: 50px;
     margin-left:260px ;
+    background-color: transparent;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   
+}
+#h4{
+    margin-top: 50px;
+    margin-left:230px ;
     background-color: transparent;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
    
@@ -265,6 +281,74 @@ h6{
     color: #222222;
     line-height: 1.5;
     max-width: 100%;
+}
+@media all and (min-width:450px) and (max-width:750px)
+{
+    #logo{
+        margin-left: 329px;
+        margin-top: 64px;
+        width: auto;
+    }
+    #box{
+    
+        height: 1100px;
+        width: 650px;
+        margin-left: 25px;
+        margin-top: 25px;
+        background-color: white;
+    }
+    #box-2{
+        width: 640px;
+        height: 90px;
+        background-color: white;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding-top: 10px;
+    }
+    #bottom-p{
+        margin-top: 50px;
+        margin-left: 280px;
+        font-size: 12px;
+        padding-bottom: 15px;
+        text-decoration: underline;
+        width: 300px;
+    }
+    
+}
+
+@media all and (min-width:320px) and (max-width:490px){
+    #logo{
+        margin-left: 329px;
+        margin-top: 64px;
+        width: auto;
+    }
+    #box{
+    
+        height: 1100px;
+        width: 650px;
+        margin-left: 25px;
+        margin-top: 25px;
+        background-color: white;
+    }
+    #box-2{
+        width: 640px;
+        height: 90px;
+        background-color: white;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding-top: 10px;
+    }
+    #bottom-p{
+        margin-top: 50px;
+        margin-left: 280px;
+        font-size: 12px;
+        padding-bottom: 15px;
+        text-decoration: underline;
+        width: 300px;
+    }
+    
 }
 
 
