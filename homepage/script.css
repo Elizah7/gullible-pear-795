@@ -1,3 +1,4 @@
+
 #navbar1{
     height: 30px;
     width:100%;
@@ -44,7 +45,7 @@
       height:65px;
       width:100%;
       display: flex;
-  
+    
   }
   #navbar21{
       height:65px;
@@ -210,8 +211,6 @@
   #media{
     height:60px;
     width:50%;
-    
-    border: 1px solid red;
     margin:auto;
     margin-top: 5%;
     display:grid;
@@ -221,9 +220,7 @@
     cursor: pointer;
 }
 #media>div>img{
-    border: 1px solid red;
     width:50%;
-   
 }
 #foot{
     height:250px;
