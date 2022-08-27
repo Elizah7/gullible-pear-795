@@ -653,7 +653,14 @@ let data = [
       
     }
   ]
+    
 
+
+        import {navbar,footer} from "../homepage/script.js"
+        document.getElementById("navbar").innerHTML = navbar();
+        
+        document.getElementById("footer1").innerHTML = footer();
+        
 
 
     // import navbar from "./components/navbar.js";
@@ -792,19 +799,19 @@ let data = [
   const sortLH = (data) =>{
     
     data.sort((a,b)=>{
-      return (Number(a.price) - Number(b.price));
+      return (a.price) - (b.price);
     });
     appendData(data);
-    //console.log(sortLH)
+    
   }
 
   const sortHL = (data) =>{
     
     data.sort((a, b)=>{
-      return (Number(b.price) - Number(a.price));
+      return (b.price) - (a.price);
     });
     appendData(data);
-    //console.log(sortHL)
+    
   }
 
   document.querySelector("#low").addEventListener("click", ()=>{
