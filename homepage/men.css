@@ -84,7 +84,9 @@ display: flex;
     cursor: pointer;
     background-color:black;   
 }
-
+a{
+    text-decoration: none;
+}
 #men{
     height: 65px;
     width:110px;
