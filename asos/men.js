@@ -98,10 +98,10 @@ document.getElementById("footer1").innerHTML = footer();
 
 let product = [];
    console.log(product);
-
+   let box=document.querySelector(".products");
   const appendData = (data) => {
-     
-    data.map(({image, name, price, colour}) =>{
+    box.innerHTML = null;
+    data.forEach(({image, name, price, colour}) =>{
        //console.log(image, name,  price);
 
        let div = document.createElement("div");
@@ -158,7 +158,7 @@ let product = [];
        div.addEventListener("click", function(){
         productDetails(elm);
        })
-       document.querySelector(".products").append(div);
+       box.append(div);
 
 
     })
@@ -195,3 +195,33 @@ let product = [];
       readMoreBtn.innerText = "View Less";
     }
    });
+
+   document.getElementById("low").onclick = ()=>{
+    sortLH();
+  }
+
+  document.getElementById("high").onclick = ()=>{
+    sortHL();
+  }
+  
+
+  let sortHL = () =>{
+    let s = data
+    console.log("hii")
+   s = s.sort((a, b)=>{
+      return b.price - a.price;
+    });
+    appendData(s);
+    //console.log(s)
+  }
+
+  let sortLH = () =>{
+    let s = data
+    console.log("hii")
+   s = s.sort((a, b)=>{
+      return a.price - b.price;
+    });
+    appendData(s);
+    console.log(s);
+    
+  }
