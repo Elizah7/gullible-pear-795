@@ -23,7 +23,7 @@ buy.map(function(data){
     // strike.style.color = "#666666";
 
     let price = document.createElement("p");
-    price.innerText = data.price;
+    price.innerText = `£ ${data.price}`;
     price.style.color = "#d01345"
 
     // let discount = document.createElement("p");
