@@ -1,12 +1,5 @@
-let vdata = [
-    { price: 7, name: "parker", type: "super", image: "https://images.asos-media.com/products/hollister-hoodie-in-black-with-chest-logo/201602216-1-black" },
-    // { price: 6, name: "peter", type: "human", image: "https://images.asos-media.com/products/hollister-hoodie-in-black-with-chest-logo/201602216-1-black" },
-    // { price: 3, name: "antman", type: "super", image: "https://images.asos-media.com/products/hollister-hoodie-in-black-with-chest-logo/201602216-1-black" },
-    // { price: 10, name: "ironman", type: "super", image: "https://images.asos-media.com/products/hollister-hoodie-in-black-with-chest-logo/201602216-1-black" },
-    // { price: 100, name: "elizah", type: "originalvampire", image: "https://images.asos-media.com/products/hollister-hoodie-in-black-with-chest-logo/201602216-1-black" },
-    // { price: 10, name: "marcel", type: "vampire", image: "https://images.asos-media.com/products/hollister-hoodie-in-black-with-chest-logo/201602216-1-black" }
-]
 
+import {navbar} from "../homepage/"
 
 let append2 = (data) => {
     let h4 = document.getElementById("h4")
@@ -16,13 +9,13 @@ let append2 = (data) => {
     });
 
 }
-localStorage.setItem("useremail", JSON.stringify(vdata))
+// localStorage.setItem("useremail", JSON.stringify(vdata))
 let usereamil = JSON.parse(localStorage.getItem("useremail")) || []
 append2(usereamil)
 
 
 let display = (data) => {
-    let child_box2 = document.getElementById("box2_child")
+    let child_box2 = document.getElementById("box2_child1")
 
     child_box2.innerHTML = " ";
 
@@ -47,7 +40,8 @@ let display = (data) => {
 
 
 }
-
+let vdata = JSON.parse(localStorage.getItem("data"))||[]
+console.log(vdata)
 display(vdata)
 let count = document.querySelector("#count")
 count.innerText = vdata.length + " " + " " + "ITEM";
@@ -215,3 +209,4 @@ let Payment = document.getElementById("Payment")
 Payment.addEventListener("click", ()=>{
     takepayment()
 })
+
