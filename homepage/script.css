@@ -1,6 +1,6 @@
 #navbar1{
     height: 30px;
-    width:auto;
+    width:100%;
     border:1px solid rgb(215, 215, 215);
     background-color:white;
     display:flex;
@@ -42,7 +42,7 @@
   }
   #navbar2{
       height:65px;
-      width:auto;
+      width:100%;
       display: flex;
   
   }
@@ -163,7 +163,7 @@
   }
   #navbar3{
       height:60px;
-      width:auto;
+      width:100%;
       background-color: #525050;
       display:grid;
       grid-template-columns: repeat(14,1fr);
