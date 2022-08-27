@@ -82,13 +82,14 @@ display: flex;
     height: 65px;
     width:110px;
     cursor: pointer;
-    background-color: #525050;   
+    background-color:black;   
 }
 
 #men{
     height: 65px;
     width:110px;
    cursor: pointer;
+   background-color: #525050;
 }
 #men:hover{
     background-color: #525050;
