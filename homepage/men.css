@@ -316,7 +316,7 @@ padding-top:30px;
     width:100%;
     margin:auto;
     margin-top:50px;
-    cursor: pointer;
+    
     position:relative;
 max-width: 85%;
     
@@ -337,6 +337,11 @@ bottom:10%;
      font-weight: bold;
      border:none;
 
+}
+#shopasosdesign:hover{
+    background-color: black;
+    color:white;
+    cursor: pointer;
 }
 #noty{
     height:80px;
@@ -362,6 +367,7 @@ bottom:10%;
     grid-template-columns: repeat(4,1fr);
     grid-template-rows: repeat(1,480px);
     gap:20px;
+    cursor: pointer;
 }
 
 #cards>div>img{
