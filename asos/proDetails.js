@@ -87,7 +87,7 @@ buy.map(function(data){
 
 function addToBag(data){
     bag.push(data);
-    //console.log(bag);
+   
      
     localStorage.setItem("data", JSON.stringify(bag));
     window.location.href = "../payment/payment.html";
