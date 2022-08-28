@@ -84,9 +84,23 @@ buy.map(function(data){
     document.querySelector(".image").append(img);
     document.querySelector(".info").append(title, div, div3, label1, div2, button1 )
 })
+let userdetail = JSON.parse(localStorage.getItem("key2"))
 
   let loginData = JSON.parse(localStorage.getItem("key2"))
 function addToBag(data){
+<<<<<<< HEAD
+if(userdetail){
+    bag.push(data);
+    //console.log(bag);
+     
+    localStorage.setItem("data", JSON.stringify(bag));
+    window.location.href = "../payment/payment.html";
+}
+else{
+    alert("Please Login first")
+}
+  
+=======
     if(loginData)
     {
         bag.push(data);
@@ -100,5 +114,6 @@ function addToBag(data){
         window.location.href = "../signin/signin.html";
     }
     
+>>>>>>> b8cd386f578cfcc585a424fe297d17b07c1a4aa5
 
 }
