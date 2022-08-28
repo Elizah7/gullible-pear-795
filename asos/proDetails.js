@@ -85,11 +85,20 @@ buy.map(function(data){
     document.querySelector(".info").append(title, div, div3, label1, div2, button1 )
 })
 
+  let loginData = JSON.parse(localStorage.getItem("key2"))
 function addToBag(data){
-    bag.push(data);
+    if(loginData)
+    {
+        bag.push(data);
    
      
     localStorage.setItem("data", JSON.stringify(bag));
     window.location.href = "../payment/payment.html";
+    }
+    else{
+        alert("Please Login First!")
+        window.location.href = "../signin/signin.html";
+    }
+    
 
 }
