@@ -8,17 +8,17 @@ nav.innerHTML = navbar()
 
 
 
-let append2 = (data) => {
-    let h4 = document.getElementById("h4")
-    h4.innerHTML = "";
-    data.forEach(ele => {
-        h4.innerText = ele.name;
-    });
+// let append2 = (data) => {
+//     let h4 = document.getElementById("h4")
+//     h4.innerHTML = "";
+//     data.forEach(ele => {
+//         h4.innerText = ele.name;
+//     });
 
-}
+// }
 
-let usereamil = JSON.parse(localStorage.getItem("key2"))||[]
-append2(usereamil)
+// let usereamil = JSON.parse(localStorage.getItem("key2"))||[];
+// append2(usereamil)
 
 
 let vdata = JSON.parse(localStorage.getItem("data"))||[]

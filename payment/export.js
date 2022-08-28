@@ -1,4 +1,4 @@
-let bagdata = JSON.parse(localStorage.getItem("bagdata"))||[]
+
 let display = (data) => {
     let child_box2 = document.getElementById("box2_child1")
 
