@@ -163,7 +163,7 @@
       
   }
   #navbar3{
-      height:60px;
+      /* height:60px;
       width:100%;
       background-color: #525050;
       display:grid;
@@ -175,8 +175,20 @@
       display:flex;
       justify-content: left;
       align-items: center;
-      cursor: pointer;
-      
+      cursor: pointer; */
+      background-color: #525050;
+      display:flex;
+      justify-content: space-between;
+    align-items: center;
+  }
+  #nav3child{
+    display: flex;
+    height:100%;
+    width:90%;
+    background-color: #525050;
+    margin-left: 5%;
+    justify-content: space-between;
+    align-items: center;
   }
   .sale{
       height:60px;

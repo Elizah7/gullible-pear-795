@@ -30,19 +30,20 @@ let navbar=()=>{
 
 </div>
 <div id="loginlogo">
-<i class="fa-regular fa-user"></i>
+<a href="../signin/signin.html"><i class="fa-regular fa-user"></i></a>
 
 </div>
 <div id="heart">
 <i class="fa-regular fa-heart"></i>
 </div>
 <div id="bag">
-<i class="fa-solid fa-bag-shopping"></i>
+<a href="../payment/order.html"><i class="fa-solid fa-bag-shopping"></i></a>
+
 </div>
 </div>
 </div>
 <div id="navbar3">
-
+<div id=nav3child>
 <div class="sale">Sale</div>
 
 <div class="des">New in</div>
@@ -60,6 +61,7 @@ let navbar=()=>{
 <div class="des">Marketplace</div>
 </div>
 
+</div>
 `
 }
 let footer=()=>{

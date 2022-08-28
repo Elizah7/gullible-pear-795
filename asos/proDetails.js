@@ -13,7 +13,7 @@ console.log(buy);
 let bag = JSON.parse(localStorage.getItem("data")) || [];
 
 buy.map(function(data){
-     console.log(data)
+
     document.querySelector(".image").innerHTML = null;
     document.querySelector(".info").innerHTML = null;
 
@@ -25,18 +25,13 @@ buy.map(function(data){
     title.innerText = data.name;
     title.setAttribute("class", "name");
     
-    // let strike = document.createElement("p");
-    // strike.innerText = `RRP ${data.strike}`;
-    // strike.style.textDecoration = "line-through";
-    // strike.style.color = "#666666";
+    
 
     let price = document.createElement("p");
     price.innerText = `£ ${data.price}`;
     price.style.color = "#d01345"
 
-    // let discount = document.createElement("p");
-    // discount.innerText = `(${data.dis})`;
-    // discount.style.color = "#d01345";
+    
 
     let color = document.createElement("p");
     color.innerText = `${data.color}`;
@@ -91,7 +86,9 @@ buy.map(function(data){
 })
 let userdetail = JSON.parse(localStorage.getItem("key2"))
 
+  let loginData = JSON.parse(localStorage.getItem("key2"))
 function addToBag(data){
+<<<<<<< HEAD
 if(userdetail){
     bag.push(data);
     //console.log(bag);
@@ -103,5 +100,20 @@ else{
     alert("Please Login first")
 }
   
+=======
+    if(loginData)
+    {
+        bag.push(data);
+   
+     
+    localStorage.setItem("data", JSON.stringify(bag));
+    window.location.href = "../payment/payment.html";
+    }
+    else{
+        alert("Please Login First!")
+        window.location.href = "../signin/signin.html";
+    }
+    
+>>>>>>> b8cd386f578cfcc585a424fe297d17b07c1a4aa5
 
 }
