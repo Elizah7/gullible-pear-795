@@ -258,16 +258,11 @@ align-items: center;
     background: #e1eec3; 
 background: -webkit-linear-gradient(to right, #f05053, #e1eec3);  
 background: linear-gradient(to right, #f05053, #e1eec3); 
-
+cursor: pointer;
 }
 #salebut{
 margin-left:660px;
 padding-top:30px;
-cursor: pointer;
-}
-#shopasosdesign:hover{
-    background-color: black;
-    color:white;
 }
 #get{
     height:fit-content;
