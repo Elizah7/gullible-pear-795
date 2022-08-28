@@ -1,3 +1,4 @@
+
 #navbar1{
     height: 30px;
     width:100%;
@@ -44,7 +45,7 @@
       height:65px;
       width:100%;
       display: flex;
-  
+    
   }
   #navbar21{
       height:65px;
@@ -210,8 +211,8 @@
   #media{
     height:60px;
     width:50%;
-   
     margin:auto;
+    margin-top: 5%;
     display:grid;
     grid-template-columns: repeat(8,1fr);
     grid-template-rows: repeat(1,60px);
@@ -220,13 +221,12 @@
 }
 #media>div>img{
     width:50%;
-    margin-top:10px;
 }
 #foot{
     height:250px;
     width:100%;
     margin:auto;
-    margin-top:50px;
+    margin-top:5%;
     background-color: rgb(236, 236, 253);
     display:grid;
     grid-template-columns: repeat(4,1fr);
