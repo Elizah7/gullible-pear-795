@@ -9,7 +9,7 @@ let navbar=()=>{
 <div id="navbar2">
 <div id="navbar21">
 <div id="aso">
-<a href="index.html"><img id="logoim" src="https://th.bing.com/th/id/OIP.pTUeu628D1e8zAR5RSmAZgHaFs?w=212&h=180&c=7&r=0&o=5&dpr=1.25&pid=1.7" alt=""></a>
+<a href="../homepage/index.html"><img id="logoim" src="https://th.bing.com/th/id/OIP.pTUeu628D1e8zAR5RSmAZgHaFs?w=212&h=180&c=7&r=0&o=5&dpr=1.25&pid=1.7" alt=""></a>
 </div>
 <a href="index.html"><div id="women">
 <h3 id="colorw">WOMEN</h3>
