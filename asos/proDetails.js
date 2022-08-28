@@ -88,7 +88,6 @@ let userdetail = JSON.parse(localStorage.getItem("key2"))
 
   let loginData = JSON.parse(localStorage.getItem("key2"))
 function addToBag(data){
-<<<<<<< HEAD
 if(userdetail){
     bag.push(data);
     //console.log(bag);
@@ -100,7 +99,6 @@ else{
     alert("Please Login first")
 }
   
-=======
     if(loginData)
     {
         bag.push(data);
@@ -114,6 +112,6 @@ else{
         window.location.href = "../signin/signin.html";
     }
     
->>>>>>> b8cd386f578cfcc585a424fe297d17b07c1a4aa5
+
 
 }
