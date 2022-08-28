@@ -89,12 +89,19 @@ buy.map(function(data){
     document.querySelector(".image").append(img);
     document.querySelector(".info").append(title, div, div3, label1, div2, button1 )
 })
+let userdetail = JSON.parse(localStorage.getItem("key2"))
 
 function addToBag(data){
+if(userdetail){
     bag.push(data);
     //console.log(bag);
      
     localStorage.setItem("data", JSON.stringify(bag));
     window.location.href = "../payment/payment.html";
+}
+else{
+    alert("Please Login first")
+}
+  
 
 }

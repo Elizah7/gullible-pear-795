@@ -6,8 +6,7 @@ nav.innerHTML = navbar()
 
 
 
-// let foot = document.getElementById("footer")
-// foot.innerHTML = footer()
+
 
 let append2 = (data) => {
     let h4 = document.getElementById("h4")
@@ -17,8 +16,8 @@ let append2 = (data) => {
     });
 
 }
-// localStorage.setItem("useremail", JSON.stringify(vdata))
-let usereamil = JSON.parse(localStorage.getItem("useremail")) || []
+
+let usereamil = JSON.parse(localStorage.getItem("key2"))||[]
 append2(usereamil)
 
 
