@@ -8,7 +8,7 @@ body{
     padding:0px;
     margin:0px;
  }
- #navbar1{
+ /* #navbar1{
   height: 30px;
   width:auto;
   border:1px solid rgb(215, 215, 215);
@@ -215,7 +215,7 @@ align-items: center;
 .des:hover{
     background-color: white;
     color:black;
-}
+} */
 #navbar4{
     height:60px;
     width:100%;
@@ -258,11 +258,16 @@ align-items: center;
     background: #e1eec3; 
 background: -webkit-linear-gradient(to right, #f05053, #e1eec3);  
 background: linear-gradient(to right, #f05053, #e1eec3); 
-cursor: pointer;
+
 }
 #salebut{
 margin-left:660px;
 padding-top:30px;
+cursor: pointer;
+}
+#shopasosdesign:hover{
+    background-color: black;
+    color:white;
 }
 #get{
     height:fit-content;
