@@ -4,7 +4,7 @@ navbar23.innerHTML=navbar()
 let footera=document.getElementById("footera")
 footera.innerHTML=footer()
 let linkfunction=()=>{
-    window.location.href="../asos/women.html"
+    window.location.href="../asos/womenProducts.html";
 }
 
 let btn=document.getElementById("whitegap")

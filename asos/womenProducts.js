@@ -651,6 +651,18 @@ let data = [
       "discount": "-20%",
       "colour": "Cream"
       
+    },
+
+
+    {
+
+      "image": "https://images.asos-media.com/products/influence-frill-collar-midi-dress-in-bold-floral-print/203021020-1-blue?$n_320w$&wid=317&fit=constrain",
+      "name": "Influence frill collar midi dress in bold floral print",
+      "strikethrough": "£00.00",
+      "price": "14.00",
+      "discount": "-51%",
+      "colour": "BLUE"
+      
     }
   ]
     

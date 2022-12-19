@@ -5,7 +5,7 @@ let footera=document.getElementById("footera")
 footera.innerHTML=footer()
 
 let linkfunction=()=>{
-    window.location.href="../asos/men.html"
+    window.location.href="../asos/menProducts.html"
 }
 
 let btn=document.getElementById("shopasosdesign")

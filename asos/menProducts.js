@@ -88,6 +88,131 @@ let data = [
       
       
     },
+
+    {
+
+      "image": "https://images.asos-media.com/products/topman-fluffy-knitted-jumper-with-all-over-check-in-stone/202226395-1-multicheck?$n_320w$&wid=317&fit=constrain",
+      "name": "Topman fluffy knitted jumper with all over check in stone",
+      "price": "45.00",
+      "colour": "MULTI"
+      
+      
+    },
+
+
+    {
+
+      "image": "https://images.asos-media.com/products/collusion-unisex-pulled-in-sweatshirt-with-patch-in-grey-marl/24446899-1-greymarl?$n_320w$&wid=317&fit=constrain",
+      "name": "COLLUSION Unisex pulled in sweatshirt with patch in grey marl",
+      "price": "12.00",
+      "colour": "GREY"
+      
+      
+    },
+
+
+    {
+
+      "image": "https://images.asos-media.com/products/asos-design-oversized-varsity-bomber-jacket-in-green/202257691-1-midgreen?$n_320w$&wid=317&fit=constrain",
+      "name": "ASOS DESIGN oversized varsity bomber jacket in green",
+      "price": "34.80",
+      "colour": "GREEN"
+      
+      
+    },
+
+
+    {
+
+      "image": "https://images.asos-media.com/products/asos-design-knitted-christmas-jumper-with-fairilse-design-in-grey/202470398-1-grey?$n_320w$&wid=317&fit=constrain",
+      "name": "ASOS DESIGN knitted christmas jumper with fairilse design in grey",
+      "price": "21.60",
+      "colour": "GREY"
+      
+      
+    },
+
+    {
+
+      "image": "https://images.asos-media.com/products/brave-soul-borg-hoodie-in-black/203081523-1-black?$n_320w$&wid=317&fit=constrain",
+      "name": "Brave Soul borg hoodie in black",
+      "price": "21.00",
+      "colour": "BLACK"
+      
+      
+    },
+
+    {
+
+      "image": "https://images.asos-media.com/products/harry-brown-lightweight-jacket-in-teal/203119208-1-midblue?$n_320w$&wid=317&fit=constrain",
+      "name": "Harry Brown lightweight jacket in teal",
+      "price": "28.05",
+      "colour": "MID BLUE"
+      
+      
+    },
+
+    {
+
+      "image": "https://images.asos-media.com/products/adidas-originals-trefoil-essentials-logo-hoodie-in-dusty-pink/203402408-1-pink?$n_320w$&wid=317&fit=constrain",
+      "name": "ASOS DESIGN skinny fit shirt with grandad collar in light blue",
+      "price": "14.70",
+      "colour": "Light Blue"
+      
+      
+    },
+
+    {
+
+      "image": "https://images.asos-media.com/products/polo-ralph-lauren-icon-logo-cord-overshirt-jacket-classic-oversized-fit-in-brown/200777626-1-brown?$n_320w$&wid=317&fit=constrain",
+      "name": "Polo Ralph Lauren icon logo cord overshirt jacket classic oversized fit in brown",
+      "price": "116.90",
+      "colour": "BROWN"
+      
+      
+    },
+
+
+    {
+
+      "image": "https://images.asos-media.com/products/nautica-archive-brays-stripe-rugby-shirt-in-multi/202122976-1-multi?$n_320w$&wid=317&fit=constrain",
+      "name": "Nautica Archive brays stripe rugby shirt in multi",
+      "price": "47.40",
+      "colour": "Multi"
+      
+      
+    },
+
+    {
+
+      "image": "https://images.asos-media.com/products/devils-advocate-smart-trousers-with-zip-ankle-detail-in-light-green/202290395-1-lightgreen?$n_320w$&wid=317&fit=constrain",
+      "name": "Devils Advocate smart trousers with zip ankle detail in light green",
+      "price": "15.75",
+      "colour": "Light Green"
+      
+      
+    },
+
+    {
+
+      "image": "https://images.asos-media.com/products/threadbare-fitness-oversized-overhead-hoodie-in-sage/202211834-1-green?$n_320w$&wid=317&fit=constrain",
+      "name": "Threadbare Fitness oversized overhead hoodie in sage",
+      "price": "21.00",
+      "colour": "GREEN"
+      
+      
+    },
+
+    {
+
+      "image": "https://images.asos-media.com/products/tommy-jeans-check-sherpa-flannel-overshirt-in-white-black/203516414-1-whiteblack?$n_320w$&wid=317&fit=constrain",
+      "name": "Tommy Jeans check sherpa flannel overshirt in white/black",
+      "price": "130.00",
+      "colour": "White/black"
+      
+      
+    },
+
 ]
 
 import {navbar,footer} from "../homepage/script.js"
