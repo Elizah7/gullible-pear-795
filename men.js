@@ -5,7 +5,7 @@ let footera=document.getElementById("footera")
 footera.innerHTML=footer()
 
 let linkfunction=()=>{
-    window.location.href="../asos/menProducts.html"
+    window.location.href="./menProducts.html"
 }
 
 let btn=document.getElementById("shopasosdesign")
@@ -32,13 +32,13 @@ let btn5=document.getElementById("card5")
 btn5.addEventListener("click",()=>{
     linkfunction()
 })
-let btn6=document.getElementById("car6")
+let btn6=document.getElementById("card6")
 btn6.addEventListener("click",()=>{
     linkfunction()
 })
 
 let loginfunction=()=>{
-    window.location.href="../signin/signin.html"
+    window.location.href="./signin.html"
 }
 let loginlogo=document.getElementById("loginlogo")
 loginlogo.addEventListener("click",()=>{

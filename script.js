@@ -9,12 +9,12 @@ let navbar=()=>{
 <div id="navbar2">
 <div id="navbar21">
 <div id="aso">
-<a href="../homepage/index.html"><img id="logoim" src="https://th.bing.com/th/id/OIP.pTUeu628D1e8zAR5RSmAZgHaFs?w=212&h=180&c=7&r=0&o=5&dpr=1.25&pid=1.7" alt=""></a>
+<a href="./index.html"><img id="logoim" src="https://th.bing.com/th/id/OIP.pTUeu628D1e8zAR5RSmAZgHaFs?w=212&h=180&c=7&r=0&o=5&dpr=1.25&pid=1.7" alt=""></a>
 </div>
-<a href="../homepage/index.html"><div id="women">
+<a href="./index.html"><div id="women">
 <h3 id="colorw">WOMEN</h3>
 </div></a>
-<a href="../homepage/men.html"><div id="men">
+<a href="./men.html"><div id="men">
 <h3 id="colorm">MEN</h3>
 </div></a>
 </div>
@@ -30,14 +30,14 @@ let navbar=()=>{
 
 </div>
 <div id="loginlogo">
-<a href="../signin/signin.html"><i class="fa-regular fa-user"></i></a>
+<a href="./signin.html"><i class="fa-regular fa-user"></i></a>
 
 </div>
 <div id="heart">
 <i class="fa-regular fa-heart"></i>
 </div>
 <div id="bag">
-<a href="../payment/order.html"><i class="fa-solid fa-bag-shopping"></i></a>
+<a href="./order.html"><i class="fa-solid fa-bag-shopping"></i></a>
 
 </div>
 </div>

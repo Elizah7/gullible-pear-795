@@ -1,5 +1,5 @@
 
-import {navbar} from "../homepage/script.js"
+import {navbar} from "./script.js"
 import {display} from "./export.js"
 let nav  = document.getElementById("nav")
 nav.innerHTML = navbar()
@@ -183,7 +183,7 @@ let takepayment = ()=>{
   else{
     alert("Thank you for shopping ! Your order has been booked ")
 
-    window.location.href = "order.html"
+    window.location.href = "./order.html"
     
 
   }

@@ -1,6 +1,6 @@
 
 
-import {navbar,footer} from "../homepage/script.js"
+import {navbar,footer} from "./script.js"
 document.getElementById("navbar").innerHTML = navbar();
 
 document.getElementById("footer1").innerHTML = footer();
@@ -93,7 +93,7 @@ if(userdetail){
     //console.log(bag);
      
     localStorage.setItem("data", JSON.stringify(bag));
-    window.location.href = "../payment/payment.html";
+    window.location.href = "./payment.html";
 }
 else{
     alert("Please Login first")
@@ -105,11 +105,11 @@ else{
    
      
     localStorage.setItem("data", JSON.stringify(bag));
-    window.location.href = "../payment/payment.html";
+    window.location.href = "./payment.html";
     }
     else{
         alert("Please Login First!")
-        window.location.href = "../signin/signin.html";
+        window.location.href = "./signin.html";
     }
     
 

@@ -4,7 +4,7 @@ navbar23.innerHTML=navbar()
 let footera=document.getElementById("footera")
 footera.innerHTML=footer()
 let linkfunction=()=>{
-    window.location.href="../asos/womenProducts.html";
+    window.location.href="./womenProducts.html";
 }
 
 let btn=document.getElementById("whitegap")
@@ -37,7 +37,7 @@ btn6.addEventListener("click",()=>{
 })
 
 let loginfunction=()=>{
-    window.location.href="../signin/signin.html"
+    window.location.href="./signin.html"
 }
 let loginlogo=document.getElementById("loginlogo")
 loginlogo.addEventListener("click",()=>{

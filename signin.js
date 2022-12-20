@@ -12,7 +12,7 @@ function btn(){
     if (check(obj1.email, obj1.password)){
         alert("signin sucessful")
         localStorage.setItem("key2",JSON.stringify(obj1))
-        location.href="../homepage/index.html"
+        location.href="./index.html"
     }else {
         alert("wrong email or password")
     }

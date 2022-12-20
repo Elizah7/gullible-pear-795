@@ -18,10 +18,10 @@ function joinbtn(){
             
               user.push(s1)
              localStorage.setItem("key",JSON.stringify(user))
-             location.href="signin.html"
+             location.href="./signin.html"
         }else{
             alert("this account allready exists")
-            location.href="signin.html"
+            location.href="./signin.html"
         }
     }
 }
